@@ -1,5 +1,7 @@
-// Karkain X SDK - runnable hello example.
+// Karkain Web SDK - first working product example.
+
+import std.http
 
 func main() {
-    println("Hello, Karkain X SDK!")
+    println(http_health())
 }

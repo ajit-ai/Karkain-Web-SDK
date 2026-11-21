@@ -1,7 +1,7 @@
 Compatibility
 =============
 
-The Karkain SDK targets the Karkain compiler v1.2.0 minimum supported
+The Karkain Web SDK targets the Karkain compiler v1.2.0 minimum supported
 version with a v1.2.x compatibility target.
 
 * Minimum supported compiler: Karkain v1.2.0.

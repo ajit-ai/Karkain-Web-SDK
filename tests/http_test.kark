@@ -1,0 +1,9 @@
+// Karkain Web SDK - focused tests.
+
+func http_health_status() {
+    return 200
+}
+
+func test_http_health_status() {
+    assert_eq(http_health_status(), 200)
+}

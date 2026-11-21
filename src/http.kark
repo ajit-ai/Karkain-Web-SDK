@@ -1,0 +1,11 @@
+// Karkain Web SDK - http module.
+//
+// Initial implementation boundary for the first working product: HTTP-shaped
+// request handling primitives over the verified Karkain capability surface
+// (std.http building blocks, Phase 125A).
+
+import std.http
+
+func http_health() {
+    return "ok"
+}
