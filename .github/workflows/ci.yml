@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          repository: ajit-ai/Karkain
+          ref: v1.2.0
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "1.21"
+      - run: go build -o karkain.exe ./cmd/karkain
+      - name: Check SDK sources
+        run: karkain check src/sdk.kark
+      - name: Build SDK example
+        run: karkain build examples/hello.kark -o hello.exe
+      - name: Run SDK tests
+        run: karkain test tests

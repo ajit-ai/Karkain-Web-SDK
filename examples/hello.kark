@@ -1,0 +1,5 @@
+// Karkain X SDK - runnable hello example.
+
+func main() {
+    println("Hello, Karkain X SDK!")
+}

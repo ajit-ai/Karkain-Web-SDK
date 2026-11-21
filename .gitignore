@@ -1,0 +1,18 @@
+# Karkain compiler build artifacts
+*.exe
+*.dll
+*.o
+*.c
+build/
+dist/
+target/
+bin/
+obj/
+.karkain/
+docs/build/
+
+# Editor / OS noise
+.idea/
+.vscode/
+__pycache__/
+*.pyc
